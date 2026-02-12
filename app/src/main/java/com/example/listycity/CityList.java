@@ -37,7 +37,7 @@ public class CityList {
     }
 
     /**
-     * Given a city, returns whether or not it is in the list
+     * Given a city, this returns whether or not it is in the list
      * @param city
      *          This is the city to check for
      * @return
@@ -53,7 +53,7 @@ public class CityList {
     }
 
     /**
-     * Given a city, returns whether or not it is in the list
+     * Given a city, this returns whether or not it is in the list
      * @param city
      *          This is the city selected for deletion
      * @throws NoSuchElementException
@@ -70,7 +70,7 @@ public class CityList {
     }
 
     /**
-     * Returns the number of cities in the CityList
+     * This returns the number of cities in the CityList
      * @return
      * `        The number of cities in the list
      */

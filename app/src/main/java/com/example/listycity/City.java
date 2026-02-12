@@ -8,7 +8,7 @@ public class City implements Comparable<City> {
     private String province;
 
     /**
-     * City constructor: creates a city with name and province.
+     * City constructor: Creates a city with the provided name and province.
      * @param city
      * @param province
      */
@@ -49,7 +49,7 @@ public class City implements Comparable<City> {
     }
 
     /**
-     * Compares the city to any object to check for equivalence based on city name and province.
+     * Compares this city to any object to check if equal, ultimately based on name and province.
      * @param o
      *          The reference object with which to compare.
      * @return
@@ -68,7 +68,7 @@ public class City implements Comparable<City> {
     }
 
     /**
-     * Generates hashcode based on name of city
+     * Generates hashcode for this city based on name.
      * @return
      *          Hashcode generated from city name
      */
