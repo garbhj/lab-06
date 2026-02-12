@@ -31,6 +31,16 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+    //noinspection WrongGradleMethod
+    tasks.withType<Test>{
+        useJUnitPlatform()
+    }
+//    testOptions {
+//        unitTests.all {
+//            it.useJUnitPlatform()
+//        }
+//    }
 }
 
 dependencies {
@@ -38,6 +48,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+//    testImplementation("org.junit.jupiter:junit-jupiter-api:5.0.1")
+//    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.0.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:6.0.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:6.0.2")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:6.0.2")
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
